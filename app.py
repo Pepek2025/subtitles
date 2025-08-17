@@ -11,11 +11,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\bin"
+#Niezbędny do uruchomienia aplikacji lokalnej
+#os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\bin"
 
 env = dotenv_values(".env")
-
-#openai_client = OpenAI(api_key=env["OPENAI_API_KEY"])
 
 def get_openai_client():
     return OpenAI(api_key=st.session_state["openai_api_key"])
