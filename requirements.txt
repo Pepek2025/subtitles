@@ -3,3 +3,4 @@ python-dotenv
 pydub
 openai
 ipython
+ffmpeg-python
